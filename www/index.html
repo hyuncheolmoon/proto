@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>admin</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title>web page sample</title>
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link href="bower/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
 
-        <!--<script src="js/lib/require.js" type="text/javascript"></script>-->
-        <script data-main="require.config" src="js/lib/require.js"></script>
-    </head>
-    <body>
-        <!--<div ng-app="myApp"></div>-->
-        <div ui-view></div>
-    </body>
+
+
+		<!--less-->  
+		<link rel="stylesheet/less" type="text/css" href="less/webframe.less" />
+
+
+		<!--gulp less-->  
+		<link href="less/webframe.css" rel="stylesheet" type="text/css"/>
+
+
+		<!--netbeans-->  
+		<!--<link href="css/output/golden-eye.css" rel="stylesheet" type="text/css"/>-->
+
+		<!-- your app's js -->
+		<script data-main="require.config" src="bower/requirejs/require.js"></script>
+
+
+
+	</head>
+	<body class="body-container">
+
+		<!--<div class="side-container" side="left" enable-menu-with-back-views="false">-->
+		<!--<left-side></left-side>-->
+		<!--</div>-->
+
+
+
+		<div class="header-container">
+			<div ui-view="header"></div>
+		</div>
+
+		<div class="main-container">
+
+
+			<div ui-view="content"></div>
+
+
+			<!--<div align-title="center" class="footer-container">-->
+			<!--<footer></footer>-->
+			<!--</div>-->
+
+		</div>
+
+
+
+	</body>
 </html>

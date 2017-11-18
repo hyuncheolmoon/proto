@@ -18,7 +18,7 @@ gulp.task("default", ["less", "watch"]);
  * @description less를 css로 변환
  */
 gulp.task("less", function () {
-    return gulp.src("./**/cfm202_admin.less")
+    return gulp.src("./**/webframe.less")
         .pipe(less())
         .pipe(gulp.dest("./"));
 });
