@@ -1,7 +1,11 @@
 # web.frame
 
+> web page framework
+
+> library
 * angular.js - 1.x
 * require.js
-* angularAMD 
+* angularAMD.js
+* less.js
+* jquery.js
 
-> web page framework
